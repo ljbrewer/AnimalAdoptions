@@ -11,3 +11,5 @@ SO THAT I can continue to build rapport with customers
 -Local storage for user input
 -Dropdown list for all types of etc
 -Result for all the selected items
+
+![Image of flowchart of Website](./assets/Images/flowchart.png)
