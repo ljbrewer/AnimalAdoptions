@@ -1,3 +1,40 @@
+
+/* Container needed to position the button. Adjust the width as needed */
+.dog-container, .cat-container,  .bear-container {
+  position: relative;
+  width: 50%;
+  max-width: 200px;
+}
+
+/* Make the image responsive */
+.dog-container, .cat-container,  .bear-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* Style the button and place it in the middle of the container/image */
+.dog-container,.cat-container,  .bear-container, #dogBtn, #catBtn, #bearBtn {
+  position: absolute;
+  top: 20%;
+  left:20%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: rgb(228, 49, 49);
+  color: rgb(14, 211, 90);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: double ;
+  cursor: pointer;
+  border-radius: 10px;
+  border-color: blue;
+  border-width: 15px;
+}
+
+.dog-container, .cat-container, .bear-container,#dogBtn #catBtn, #bearBtn :hover {
+  background-color: rgb(243, 18, 18);
+}
+
 table, th, td {
    border: 1px, solid, black;
     }
+
