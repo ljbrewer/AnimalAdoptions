@@ -1,9 +1,13 @@
 var container = document.querySelector('#dogContainer');
 
+var dogpic = [];
+
 function displayDog(imageArray) {
   for (let i = 0; i < imageArray.length; i++) {
     var image = document.createElement('img')
     image.setAttribute('src', imageArray[i])
+    dogpic[i]=imageArray[i];
+    console.log(dogpic[i]);
     image.setAttribute('alt', "Dog Image")
     container.append(image);
     
@@ -29,3 +33,8 @@ document.querySelector('#search').addEventListener('submit', function (event) {
   getDogData(document.querySelector('input').value.trim());
 })
 
+document.querySelector('#submitBtn').addEventListener('submit', function (event) {
+  event.preventDefault()
+  console.log("submitBtn")
+  window.location = "./subForm.html";
+});
