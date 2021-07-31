@@ -5,50 +5,61 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adoption Submission Form </title>
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="subForm.css">
 </head>
 <body>
   <header id="siteLogo">Adoption Center Logo</header>
 
-  <section>
-    <div>
-      <div>
-        <div>
-        <h1>Adoption Application and Contract</h1>
-        </div>
-
-        <div>
-        <!-- Bock Input for Name and Last Name -->
-        <p>Person Looking to Adopt</p>
-        <input type="text">
-      </div>
-
-      <div>
-        <!-- name of animal being adopted-->
-        <p>Name of Animal You Wish to Adopt </p>
-        <input type="text">
-      </div>
-
-      <div>
-        <!-- email of person requesting adoption -->
-        <p>Email Address </p>
-        <input type="text">
-      </div>
-
-      <div>
-        <!-- phone number of person -->
-        <p>Phone Number </p>
-        <input type="text">
-      </div>
-
-      <div>
-        <!-- Home Address  -->
-        <p>Address </p>
-        <input type="text">
-      </div>
-      
+  <article>
+    <form class="pure-form pure-form-stacked">
+      <fieldset>
+          <legend>Adoption Application and Contract</legend>
+          <div class="pure-g">
+              <div class="pure-u-1-8 pure-u-md-1-3">
+                  <label for="multi-first-name">First Name</label>
+                  <input type="text" id="multi-first-name" class="pure-u-23-24" />
+              </div>
+              <div class="pure-u-1-8 pure-u-md-1-3">
+                  <label for="multi-last-name">Last Name</label>
+                  <input type="text" id="multi-last-name" class="pure-u-23-24" />
+              </div>
+              <div class="pure-u-4-24 pure-u-md-1-3">
+                  <label for="multi-email">E-Mail</label>
+                  <input type="email" id="multi-email" class="pure-u-23-24" required="" />
+              </div>
+              <div class="pure-u-1-8 pure-u-md-1-3">
+                  <label for="multi-phone-number">Phone Number</label>
+                  <input type="email" id="multi-email" class="pure-u-23-24" required="" />
+              </div>
+              <div class="pure-u-5-24 pure-u-md-1-3">
+                  <label for="multi-address">Address</label>
+                  <input type="email" id="multi-email" class="pure-u-23-24" required="" />
+              </div>
+              <div class="pure-u-3-24 pure-u-md-1-3">
+                  <label for="multi-city">City</label>
+                  <input type="text" id="multi-city" class="pure-u-23-24" />
+              </div>
+              <div class="pure-u-2-24 pure-u-md-1-3">
+                  <label for="multi-state">State</label>
+                  <select id="multi-state" class="pure-input-1-2">
+                      <option>AL</option>
+                      <option>CA</option>
+                      <option>IL</option>
+                      <option>HI</option>
+                  </select>
+              </div>
+              <div class="pure-u-2-24 pure-u-md-1-3">
+                  <label for="multi-zip-code">Zip Code</label>
+                  <input type="text" id="multi-city" class="pure-u-23-24" />
+              </div>
+          </div>
+      </fieldset>
+  </form>
+<!-- 
       <div>
         <!-- Screening q1 with answer bubble choices, yes/no-->
-        <p>Do you own any pets? </p> 
+        <label>Do you own any pets? </label> 
         <input type="button" value="">
         <input type="button" value="">
         
@@ -56,34 +67,36 @@
 
       <div>
         <!-- Screening q2 with answer text box-->
-        <p>Please provide the names, emails, and contact numbers for 3 personal references:</p> 
+        <label>Please provide the names, emails, and contact numbers for 3 personal references:</label> 
         <input type="text">
       </div>
 
       <div>
         <!-- Screening q3 with answer text box -->
-        <p>If you have to leave town, emergently or planned, where would your pet stay?</p>
+        <label>If you have to leave town, emergently or planned, where would your pet stay?</label>
         <input type="text">
       </div>
       
       <div>
         <!-- Terms and conditions -->
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatem tempore numquam dicta pariatur nam aspernatur rem ab aut alias! Qui nihil et debitis odit, reprehenderit cupiditate hic minima perspiciatis.</p>
-      </div>
+        <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatem tempore numquam dicta pariatur nam aspernatur rem ab aut alias! Qui nihil et debitis odit, reprehenderit cupiditate hic minima perspiciatis.</label>
+      </div> -->
 
       <div>
         <!-- signature and box text input -->
-        <p>Signature of Potential Pet Owner</p>
+        <label>Signature of Potential Pet Owner</label>
         <input type="text">
       </div>
 <br>
       <div>
       <!-- submit button -->
-      <button> Submit</button>
+      <button id="submitBtn"> Submit</button>
     </div>
 
       </div>
     </div>
-  </section>
+  </article>
+
+  <script src="./subForm.js"></script>
 </body>
 </html>
