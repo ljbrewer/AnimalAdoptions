@@ -37,5 +37,5 @@ document.querySelector('#search').addEventListener('submit', function (event) {
 document.querySelector('#submitBtn').addEventListener('submit', function (event) {
   event.preventDefault()
   console.log("submitBtn")
-  window.location = "./subForm.html";
+  window.location = "./submission-Form/subForm.html";
 });

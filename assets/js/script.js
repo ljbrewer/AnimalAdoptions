@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-=======
 
 var searchButton = document.getElementById('find-me');
->>>>>>> main
 
 
 
@@ -14,7 +11,7 @@ $('.dog-pic').click(function () {
 $('.cat-pic').click(function () {
     window.location = "cats.html";
 });
-$('.fox-pic').click(function () {
+$('.bear-pic').click(function () {
     window.location = "dogs.html";
 });
 

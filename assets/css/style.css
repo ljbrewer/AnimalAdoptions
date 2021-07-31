@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 *{
   box-sizing:border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -12,20 +11,24 @@ body{
 }
 
 header {
-  width: 20%;
-  max-height: 10%;
-  margin-left: 35%;
-  margin-top: 0;
-  margin-bottom: 5%;
-  border: 10px ridge rgb(241, 241, 245);
-  background-color: lightblue;
-  font-size:20rem;
-  text-align:center;
-  
+  border-style: ridge;
+  border-width: 10px;
+  border-color: honeydew;
+  margin: 2px 25px 10px 0;
+  padding: 5px;
+  width: 25%;
+  height: auto;
+  text-align:justify;
+ ;
 }
-=======
 
->>>>>>> main
+  
+
+
+.topnav{
+  font-size: 30px;
+
+}
 /* Container needed to position the button. Adjust the width as needed */
 div {
   position: relative;
@@ -42,8 +45,8 @@ div {
 }
 
 /* Make the image responsive */
-.dog-container, .cat-container,  .fox-container, img {
-  margin-top: .0;
+.dog-container, .cat-container,  .bear-container, img {
+  margin-top: 0;
   max-width :400px;
   border-style:ridge;
   border-width: 4px;
@@ -51,9 +54,8 @@ div {
 }
 
 /* Style the button and place it in the middle of the container/image */
-.dog-container,.cat-container,.fox-container {
+.dog-container,.cat-container,.bear-container {
   position: relative;
-  
   background-color: rgb(186, 196, 231);
   color: rgb(0, 0, 0);
   font-size: 16px;
@@ -65,16 +67,18 @@ div {
   border-width: 8px;
 }
 
-#dogBtn, #catBtn, #foxBtn :hover {
+#bearBtn,#dogBtn,#catBtn {
   background-color: rgb(205, 233, 241);
 }
 
+
 aside {
-  position:relative;
+  
   width: 30%;
+  right:0;
   padding-left: 15px;
   margin-left: 15px;
-  float: right;
+
   background-color: rgb(211, 219, 205);
 }
 h1 {
@@ -83,19 +87,8 @@ h1 {
   text-align: center;
 }
 
-<<<<<<< HEAD
 p, h2 {
   font-size: 20px;
   line-height:20px;
   text-align: left;
 }
-=======
-.dog-container, .cat-container, .bear-container,#dogBtn #catBtn, #bearBtn :hover {
-  background-color: rgb(243, 18, 18);
-}
-
-table, th, td {
-   border: 1px, solid, black;
-    }
-
->>>>>>> main
