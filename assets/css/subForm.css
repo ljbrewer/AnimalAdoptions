@@ -1,0 +1,35 @@
+header {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  margin: 4%;
+}
+
+#site-Logo {
+  font-size: 3em;
+  text-shadow: 4px 2px 5px teal,
+	0px 1px 2px #120901;
+}
+
+#survey-Form {
+  max-height: 80%;
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0.9;
+	color: #120901;
+	font-size: 1.2em;
+	margin: 0px 50px;
+	border: 2px solid #120901;
+	border-radius: 5px;
+	background-color: teal;
+	box-shadow: 5px 5px 5px #120901;
+}
+
+.form-Layout {
+  padding: 10px;
+	margin-left: 5%;
+	font-size: 15px;
+}
+
