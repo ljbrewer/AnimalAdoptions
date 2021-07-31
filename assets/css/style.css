@@ -1,40 +1,94 @@
+*{
+  box-sizing:border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+}
 
+body{
+  margin:0;
+  padding:0;
+  background-color: lemonchiffon;
+}
+
+header {
+  border-style: ridge;
+  border-width: 10px;
+  border-color: honeydew;
+  margin: 2px 25px 10px 0;
+  padding: 5px;
+  width: 25%;
+  height: auto;
+  text-align:justify;
+ ;
+}
+
+  
+
+
+.topnav{
+  font-size: 30px;
+
+}
 /* Container needed to position the button. Adjust the width as needed */
-.dog-container, .cat-container,  .bear-container {
+div {
   position: relative;
-  width: 50%;
-  max-width: 200px;
+  margin-top: 10%;
+  margin-bottom: 2%;
+  margin-right:60%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  height: 50vh;
+
+  
 }
 
 /* Make the image responsive */
-.dog-container, .cat-container,  .bear-container img {
-  width: 100%;
+.dog-container, .cat-container,  .bear-container, img {
+  margin-top: 0;
+  max-width :400px;
+  border-style:ridge;
+  border-width: 4px;
   height: auto;
 }
 
 /* Style the button and place it in the middle of the container/image */
-.dog-container,.cat-container,  .bear-container, #dogBtn, #catBtn, #bearBtn {
-  position: absolute;
-  top: 20%;
-  left:20%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: rgb(228, 49, 49);
-  color: rgb(14, 211, 90);
+.dog-container,.cat-container,.bear-container {
+  position: relative;
+  background-color: rgb(186, 196, 231);
+  color: rgb(0, 0, 0);
   font-size: 16px;
   padding: 12px 24px;
-  border: double ;
+  border-style: ridge;
   cursor: pointer;
   border-radius: 10px;
-  border-color: blue;
-  border-width: 15px;
+  border-color: rgb(244, 244, 246);
+  border-width: 8px;
 }
 
-.dog-container, .cat-container, .bear-container,#dogBtn #catBtn, #bearBtn :hover {
-  background-color: rgb(243, 18, 18);
+#bearBtn,#dogBtn,#catBtn {
+  background-color: rgb(205, 233, 241);
 }
 
-table, th, td {
-   border: 1px, solid, black;
-    }
 
+aside {
+  
+  width: 30%;
+  right:0;
+  padding-left: 15px;
+  margin-left: 15px;
+
+  background-color: rgb(211, 219, 205);
+}
+h1 {
+  font-size: 20px;
+  line-height:20px;
+  text-align: center;
+}
+
+p, h2 {
+  font-size: 20px;
+  line-height:20px;
+  text-align: left;
+}
