@@ -23,6 +23,15 @@ function getDogData(term = 'terrier') {
     
   })
     .then(function (data) {
+      var cat1 = document.getElementById("dogpic1");
+      var cat2 = document.getElementById("catpic2");
+      var cat3 = document.getElementById("catpic3");
+      cat1.setAttribute("src", data.message[0]);
+      cat2.setAttribute("src", res[1].url);
+      cat3.setAttribute("src", res[2].url);
+      localStorage.setItem(1, res[0].url);
+      localStorage.setItem(2, res[1].url);
+      localStorage.setItem(3, res[2].url);
     displayDog(data.message);
     })
 }
@@ -34,8 +43,8 @@ document.querySelector('#search').addEventListener('submit', function (event) {
   getDogData(document.querySelector('input').value.trim());
 })
 
-document.querySelector('#submitBtn').addEventListener('submit', function (event) {
-  event.preventDefault()
-  console.log("submitBtn")
-  window.location = "./submission-Form/subForm.html";
-});
+// document.querySelector('#submitBtn').addEventListener('submit', function (event) {
+//   event.preventDefault()
+//   console.log("submitBtn")
+//   window.location = "./submission-Form/subForm.html";
+//});

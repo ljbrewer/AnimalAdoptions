@@ -58,8 +58,17 @@ table, th, td {
     border: 1px ridge black;
 }
 td, tr {
-      padding: 15px;
+    padding: 15px;
 }
 .oddrow{
     background-color: azure;
+
+}
+
+img {
+    width: 25%;
+
+}
+a{
+    font-size: 36px;
 }
