@@ -1,32 +1,41 @@
 var searchButton = document.getElementById('find-me');
-var bearContainer = document.getElementById('bearContainer');
+var bearContainer = document.getElementById('foxesContainer');
+
+var foxpic = [];
 
 
-function displayBear(imageArray) {
+function displayFox(imageArray) {
     for (let i = 0; i < imageArray.length; i++) {
       var image = document.createElement('img')
       image.setAttribute('src', imageArray[i])
-      image.setAttribute('alt', "Bear Image")
+      foxpic[i]=imageArray[i];
+      image.setAttribute('alt', "Fox Image")
       container.append(image);
     }
   }
   
-  function getBearData(term = 'Foxes') {
+  function getFoxData(term = 'Foxes') {
      var endPoint = "https://randomfox.ca/floof/"
     fetch(endPoint)
     .then(function(response) {
-      console.log(response);
+      // console.log(response);
       return response.json();
     })
       .then(function (data) {
-      //displayBear(data.message);
-      console.log(data);
+      displayFox(data.message);
+      // console.log(data);
       })
   }
   
-  getBearData();
+  getFoxData();
 
-
-
-
-searchButton.addEventListener('click', getBearData);
+  document.querySelector('#search').addEventListener('submit', function (event) {
+    event.preventDefault();
+    getFoxData(document.querySelector('input').value.trim());
+  })
+  
+  document.querySelector('#submitBtn').addEventListener('submit', function (event) {
+    event.preventDefault()
+    console.log("submitBtn")
+    window.location = "./submission-Form/subForm.html";
+  });
