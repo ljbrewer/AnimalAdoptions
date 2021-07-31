@@ -1,24 +1,32 @@
 var searchButton = document.getElementById('find-me');
+var bearContainer = document.getElementById('bearContainer');
 
 
-// function displayBear()
-fetch('https://placebear.com/200/300')
-  .then(response => response.json())
-  .then(data => console.log(data));
+function displayBear(imageArray) {
+    for (let i = 0; i < imageArray.length; i++) {
+      var image = document.createElement('img')
+      image.setAttribute('src', imageArray[i])
+      image.setAttribute('alt', "Bear Image")
+      container.append(image);
+    }
+  }
+  
+  function getBearData(term = 'Foxes') {
+     var endPoint = "https://randomfox.ca/floof/"
+    fetch(endPoint)
+    .then(function(response) {
+      console.log(response);
+      return response.json();
+    })
+      .then(function (data) {
+      //displayBear(data.message);
+      console.log(data);
+      })
+  }
+  
+  getBearData();
 
 
-// function getBearPics(term = 'bears') {
-    
-// var key = '21fdcacl68aypKOUNa7JaHMbnkOLR7Z7';
-// var endPoint = 'https://placebear.com/200/300';
-// fetch(endPoint)
-// .then(function(response) {
-//     return response.json(); 
-// })
-// .then(function(data) {
-//     getBearPics(data.data[0]);
-// })  
-// }
 
 
-searchButton.addEventListener('click', getBearPics);
+searchButton.addEventListener('click', getBearData);
