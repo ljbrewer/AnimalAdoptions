@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+=======
+
+var searchButton = document.getElementById('find-me');
+>>>>>>> main
+
+
+
 
 $('.dog-pic').click(function () {
     window.location = "dogs.html";

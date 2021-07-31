@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   box-sizing:border-box;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -22,6 +23,9 @@ header {
   text-align:center;
   
 }
+=======
+
+>>>>>>> main
 /* Container needed to position the button. Adjust the width as needed */
 div {
   position: relative;
@@ -79,8 +83,19 @@ h1 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 p, h2 {
   font-size: 20px;
   line-height:20px;
   text-align: left;
 }
+=======
+.dog-container, .cat-container, .bear-container,#dogBtn #catBtn, #bearBtn :hover {
+  background-color: rgb(243, 18, 18);
+}
+
+table, th, td {
+   border: 1px, solid, black;
+    }
+
+>>>>>>> main
