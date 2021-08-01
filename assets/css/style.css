@@ -16,21 +16,14 @@ header {
   border-color: honeydew;
   margin: 2px 25px 10px 0;
   padding: 5px;
-  width: 25%;
+  width: 40%;
   height: auto;
   text-align:justify;
  ;
 }
 
-  
-
-
-.topnav{
-  font-size: 30px;
-
-}
 /* Container needed to position the button. Adjust the width as needed */
-div {
+.pure-g {
   position: relative;
   margin-top: 10%;
   margin-bottom: 2%;

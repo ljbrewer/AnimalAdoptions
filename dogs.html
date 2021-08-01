@@ -8,13 +8,23 @@
   <title>Dog Adoptions</title>
 </head>
 <body>
-  <header>Dog Adoption Choices</header>
-  <form id="search">
-    <input type="text">
+  <header class="pure-u-1 pure-u-md-3-4 flex-centered">Dog Adoption Choices</header>
+  <form id="search"class="pure-form-aligned" >
+        <input type="text" id="search" class="pure-input-1" placeholder=".pure-input-1" />
     <button class="btn" type="submit">Find</button>
+      <div>
+        <h2>
+        <a href="subForm.html">Adoption Form</a>
+        </h2>
+        <h4>
+        <a href="index.html">Return to Main Adoption Page</a>
+        </h4>
+      </div>
   </form>
   <div id="dogContainer" class="dogs">
       <img id="dogpic1">
+      <img id="dogpic2">
+      <img id="dogpic3">
     <table >
       <thead>
         <tr>
@@ -46,9 +56,7 @@
       </tbody>
     </table>
   </div>
-  <div>
-   <a href="subForm.html">Adoption Form</a>
-  </div>
+
   <script src="assets/js/dogs.js"></script>
 </body>
 </html>

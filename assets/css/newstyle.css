@@ -1,0 +1,22 @@
+*{
+  box-sizing:border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+}
+body{
+  margin:0;
+  padding:0;
+  background-color: lemonchiffon;
+}
+
+.flex-centered {
+  border-style: ridge;
+  border-width: 10px;
+  border-color: honeydew;
+  margin: 2px 25px 10px 0;
+  padding: 5px;
+  width:50%;
+  height: auto;
+  text-align:center;
+  flex: ;
+}
