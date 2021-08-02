@@ -11,12 +11,14 @@
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css">
         <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
 
+    <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
+
     <link rel="stylesheet" href="./assets/css/newstyle.css">
 </head>
 <body>
     <header>
         <div class="pure-g">
-            <div class="pure-u-1 pure-u-md-1-4 flex-centered">
+            <div  class="pure-u-md-1-4 flex-centered">
                 <h1>Animal Adoptions
                 </h1>
             </div>
@@ -27,6 +29,7 @@
                             <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                                 <a href="#" id="menuLink1" class="pure-menu-link">Type of Animal</a>
                                 <ul class="pure-menu-children">
+                                 
                                     <li class="pure-menu-item">
                                         <a href="dogs.html" class="pure-menu-link">Dogs</a>
                                     </li>
@@ -36,6 +39,7 @@
                                     <li class="pure-menu-item">
                                         <a href="Foxes.html" class="pure-menu-link">Foxes</a>
                                     </li>
+                               
                                 </ul>
                             </li>
                         </ul>
@@ -46,23 +50,24 @@
     
 </head>
 <body>
-
+  <section>
     <div class="dog-container">
-        <label for="dogs">Click Picture for Dogs</label> 
+        <label for="dogs" class="caption">Click Picture for Dogs</label> 
         <button id= "dogBtn" class="dog-pic btn" >
         <img src="./assets/images/bandit200.jpg" alt="Bandit"></button>
      
     </div>
     <div class="cat-container">
-        <label for="cat">Click Picture for Cats</label> 
+        <label for="cat" class="caption">Click Picture for Cats</label> 
         <button id="catBtn" class="cat-pic btn">
         <img src="./assets/images/Angel200.jpg"  alt="Angel Cat"></button>
     </div>
     <div class="bear-container">
-        <label for="fox">Click Picture for Foxes</label>
+        <label for="fox" class="caption">Click Picture for Foxes</label>
         <button id="foxBtn" class="fox-pic btn">
-        <img src="./assets/images/dixie.jpg" alt="fox"></button>
+        <img src="./assets/images/dixie200.jpg" alt="fox"></button>
     </div>
+</section>
     <div>
          <aside id="aside" class="sidebar">
             <h1>Would you Like to Adopt an Animal? </h1>
@@ -70,12 +75,12 @@
             <h2>Please click on the Picture that represents they type of Animal you are looking for.</h2>
         </aside>
     </div>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="assets/js/script.js"></script>
+
 </div>
 
-
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/script.js"></script>
   
 </body>
-    <script src="assets/js/script.js"></script>
+   
 </html>
