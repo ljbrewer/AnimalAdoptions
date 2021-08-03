@@ -13,7 +13,7 @@ SO THAT I can continue to build rapport with customers
 ```
 ![Image of flowchart of Website](./assets/images/flowchart.png)
 
-![Image of Website Main Page](.assets/images/mainpage.jpg)
+![Image of Website Main Page](.assets/images/mainpage.png)
 
 ![Image of website Dog Page](./assets/images/dogpage.png)
 
