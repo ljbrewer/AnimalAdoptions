@@ -1,25 +1,25 @@
 var searchButton = document.getElementById('find-me');
 var bearContainer = document.getElementById('foxesContainer');
-var fox1 = document.getElementById("foxpic1");
+// var fox1 = document.getElementById("foxpic1");
 
 var foxpic = [];
 
-function start() {
-  fetch("https://randomfox.ca/floof/")
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (res) {
-      var fox1 = document.getElementById("foxpic1");
-      fox1.setAttribute("src", res[0].url);
-      localStorage.setItem(1, res[0].url);
-    });
-}
-start();
+// function start() {
+//   fetch("https://randomfox.ca/floof/")
+//     .then(function (response) {
+//       return response.json();
+//     })
+//     .then(function (res) {
+//       var fox1 = document.getElementById("foxpic1");
+//       fox1.setAttribute("src", res[0].url);
+//       localStorage.setItem(1, res[0].url);
+//     });
+// }
+// start();
 
 
 function displayFox(imageArray) {
-    for (let i = 0; i < imageArray.length; i++) {
+    for (let i = 0; i < imageArray; i++) {
       var image = document.createElement('img')
       image.setAttribute('src', imageArray[i])
       foxpic[i]=imageArray[i];
