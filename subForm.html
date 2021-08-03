@@ -12,7 +12,7 @@
 <body>
   <header id="site-Logo">Adoption Center Logo</header>
 
-  <main class="form-Layout" id="survey-Form">
+  <main class="form-Layout submit-Info" id="adoption-Form">
     <form name="adoptForm" class="pure-form pure-form-stacked">
       <fieldset>
           <legend>Adoption Application and Contract</legend>
@@ -31,15 +31,15 @@
               </div>
               <div class="pure-u-1-8 pure-u-md-1-3">
                   <label for="multi-phone-number">Phone Number</label>
-                  <input type="phone" id="multi-phone-number" class="pure-u-23-24" required="" />
+                  <input type="text" id="multi-phone-number" class="pure-u-23-24" required="" />
               </div>
               <div class="pure-u-5-24 pure-u-md-1-3">
                   <label for="multi-address">Address</label>
-                  <input type="address" id="multi-address" class="pure-u-23-24" required="" />
+                  <input type="text" id="multi-address" class="pure-u-23-24" required="" />
               </div>
               <div class="pure-u-3-24 pure-u-md-1-3">
                   <label for="multi-city">City</label>
-                  <input type="city" id="multi-city" class="pure-u-23-24" />
+                  <input type="text" id="multi-city" class="pure-u-23-24" />
               </div>
               <div class="pure-u-2-24 pure-u-md-1-3">
                   <label for="multi-state">State</label>
@@ -52,14 +52,16 @@
               </div>
               <div class="pure-u-2-24 pure-u-md-1-3">
                   <label for="multi-zip-code">Zip Code</label>
-                  <input type="zip" id="multi-zip-code" class="pure-u-23-24" />
+                  <input type="text" id="multi-zip-code" class="pure-u-23-24" />
               </div>
           </div>
 
           <div>
             <!-- Screening q1 with answer bubble choices, yes/no-->
             <div>
-              <label> Do you own any pets ?
+              <label>Do you own any pets ?</label>
+              <div id="selectionYN">
+              <label> 
                 <input type="radio" name="choice-radio">
                 Yes
               </label>
@@ -67,6 +69,7 @@
                 <input type="radio" name="choice-radio">
                 No
               </label>
+            </div>
             </div>
           </div>
     
@@ -95,7 +98,7 @@
     
     <br>
     
-          <div>
+          <div id="submit">
           <!-- submit button -->
           <button id="submitBtn"> Submit</button>
         </div>
@@ -107,6 +110,10 @@
       
     </form>
 </main>
+
+<section id="congrats">
+  <p>Congrats you have Submitted your Application !</p>
+</section>
 
   <script src="./assets/js/subForm.js"></script>
 </body>

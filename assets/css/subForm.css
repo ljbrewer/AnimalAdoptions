@@ -12,8 +12,7 @@ header {
 	0px 1px 2px #120901;
 }
 
-#survey-Form {
-  max-height: 80%;
+#adoption-Form {
   display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -31,5 +30,15 @@ header {
   padding: 10px;
 	margin-left: 5%;
 	font-size: 15px;
+}
+
+#submit {
+	display: flex;
+	justify-content: center;
+}
+
+#submitBtn {
+	border-radius: 10px;
+	color: black;
 }
 
