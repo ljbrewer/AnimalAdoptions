@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-var searchButton = document.getElementById('find-me');
-var bearContainer = document.getElementById('foxesContainer');
-
-
-var foxpic = [];
-
-
-=======
 var bearContainer = document.querySelector('#foxesContainer');
 
 var foxpic = [];
 
->>>>>>> KevinBranch
 
 function displayFox(imageArray) {
     for (let i = 0; i < imageArray; i++) {
@@ -22,13 +12,7 @@ function displayFox(imageArray) {
       container.append(image);
     }
   }
-<<<<<<< HEAD
-
-  for (var i = 0; i < 3; i++) {
-
-=======
   
->>>>>>> KevinBranch
   function getFoxData(term = 'Foxes') {
      var endPoint = "https://randomfox.ca/floof/"
     fetch(endPoint)
@@ -42,14 +26,10 @@ function displayFox(imageArray) {
       displayFox(data.message);
       console.log(data);
       })
-<<<<<<< HEAD
-  }
-=======
     }
 
     
   
->>>>>>> KevinBranch
   
   getFoxData();
 
