@@ -1,0 +1,74 @@
+*{
+  box-sizing:border-box;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+}
+body{
+  margin:0;
+  padding:0;
+  background-color: lemonchiffon;
+}
+#menuLink1 {
+font-size: 2rem;
+color:rgb(60, 9, 119);
+background-image: url("../images/arrow.png");
+background-repeat: no-repeat;
+background-position: right;
+background-size:15%;
+
+}
+
+#menuLink1:after {
+  background-image: url("../images/arrow.png")
+}
+.flex-centered {
+  flex: 100%;
+  justify-items: center;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: honeydew;
+  margin: 2px 25px 10px 0;
+  padding: 5px;
+  width:50%;
+  height: auto;
+  text-align:center; 
+}
+.caption {
+    display: block;
+    text-align:left;
+    margin: 0 0 5px 0;
+}
+/* Make the image responsive */
+section {
+  float: left;
+  margin-left: 10%;
+}
+.dog-container, .cat-container,  .bear-container, img {
+  display: flex;
+  width: 100%;
+  margin-top: 5px;
+  max-width :430px;
+  /* border-style:ridge;
+  border-width: 4px; */
+  height: auto;
+  border-style: ridge;
+  border-width: 10px;
+  background-color: lavender;
+  justify-items: center;
+  border-color: honeydew
+}
+img {
+  width: 50%;
+  min-width:300px;
+  border-style: ridge;
+  border-width: 10px;
+  border-color: honeydew
+}
+
+.sidebar {
+  float: right;
+  width: 50%;
+}
+
+
+
