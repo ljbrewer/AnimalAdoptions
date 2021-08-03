@@ -2,17 +2,6 @@ var container = document.querySelector('#dogContainer');
 
 var dogpic = [];
 
-function displayDog(imageArray) {
-  for (let i = 0; i < imageArray.length; i++) {
-    var image = document.createElement('img')
-    image.setAttribute('src', imageArray[i])
-    dogpic[i]=imageArray[i];
-    console.log(dogpic[i]);
-    image.setAttribute('alt', "Dog Image")
-    container.append(image);
-    
-  }
-}
 
 function getDogData(term = 'terrier') {
    var endPoint = "https://dog.ceo/api/breed/" + term +"/images/random/3"
@@ -23,7 +12,15 @@ function getDogData(term = 'terrier') {
     
   })
     .then(function (data) {
-    displayDog(data.message);
+      dogpic[0] = document.getElementById("dogpic1");
+      dogpic[1] = document.getElementById("dogpic2");
+      dogpic[2] = document.getElementById("dogpic3");
+      dogpic[0].setAttribute("src", data.message[0]);
+      dogpic[1].setAttribute("src", data.message[1]);
+      dogpic[2].setAttribute("src", data.message[2]);
+      localStorage.setItem(1, data.message[0]);
+      localStorage.setItem(2, data.message[1]);
+      localStorage.setItem(3, data.message[2]);
     })
 }
 
@@ -34,8 +31,3 @@ document.querySelector('#search').addEventListener('submit', function (event) {
   getDogData(document.querySelector('input').value.trim());
 })
 
-document.querySelector('#submitBtn').addEventListener('submit', function (event) {
-  event.preventDefault()
-  console.log("submitBtn")
-  window.location = "./submission-Form/subForm.html";
-});

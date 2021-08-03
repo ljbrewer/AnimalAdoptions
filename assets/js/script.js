@@ -12,6 +12,6 @@ $('.cat-pic').click(function () {
     window.location = "cats.html";
 });
 $('.bear-pic').click(function () {
-    window.location = "dogs.html";
+    window.location = "Foxes.html";
 });
 
