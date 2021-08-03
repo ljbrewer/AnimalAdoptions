@@ -1,7 +1,9 @@
 var searchButton = document.getElementById('find-me');
 var bearContainer = document.getElementById('foxesContainer');
 
+
 var foxpic = [];
+
 
 
 function displayFox(imageArray) {
@@ -13,12 +15,16 @@ function displayFox(imageArray) {
       container.append(image);
     }
   }
-  
+
+  for (var i = 0; i < 3; i++) {
+
   function getFoxData(term = 'Foxes') {
      var endPoint = "https://randomfox.ca/floof/"
     fetch(endPoint)
     .then(function(response) {
-      // console.log(response);
+
+      console.log(response);
+
       return response.json();
     })
       .then(function (data) {
