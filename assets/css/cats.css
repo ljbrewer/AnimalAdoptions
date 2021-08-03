@@ -5,6 +5,11 @@ td {
   border: 1px ridge black;
   ;
 }
+h2{text-align: center;
+}
+h3{text-align: center;
+
+}
 body{
   background-color: lemonchiffon;
 }
