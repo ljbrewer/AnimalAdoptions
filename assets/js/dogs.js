@@ -24,6 +24,7 @@ function getDogData(term = 'terrier') {
   })
     .then(function (data) {
     displayDog(data.message);
+    console.log(data);
     })
 }
 
