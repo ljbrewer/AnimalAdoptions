@@ -1,5 +1,10 @@
+* {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
 body {
 	background-color: lemonchiffon;
+	margin: 0;
 }
 
 header {
@@ -12,7 +17,7 @@ header {
 
 #site-Logo {
   font-size: 3em;
-  text-shadow: 4px 2px 5px teal,
+  text-shadow: 4px 2px 5px rgb(186, 196, 231),
 	0px 1px 2px #120901;
 }
 
@@ -52,13 +57,15 @@ header {
 }
 
 #submitBtn {
+	top: 0px;
+	margin: 20px;
 	border-radius: 10px;
 	color: black;
-	background-color: coral;
+	background-color: lemonchiffon;
 }
 
 #goBack {
-	background-color: coral;
+	background-color: lemonchiffon;
 	display: inline-block;
 	border-radius: 10px;
   color: black;
@@ -71,9 +78,6 @@ header {
 	
 }
 
-#congratsMsg {
-	visibility: hidden;
-}
 
 #msg {
   visibility: hidden;
@@ -94,6 +98,61 @@ header {
 
 #msg.error {
   color: #e6252c;
+}
+
+#after-Submit {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	opacity: 0.9;
+	color: #120901;
+	font-size: 1.2em;
+	border: 2px solid #120901;
+	border-radius: 5px;
+	background-color: rgb(186, 196, 231);
+	box-shadow: 5px 5px 5px #120901;
+	margin: 0 50px;
+	margin: 20%
+}
+
+.main-page-btn {
+	text-align: center;
+	
+}
+
+#goBack {
+	text-decoration: none;
+	box-shadow: 5px 5px 5px #120901;
+	
+}
+
+#goBackSub {
+	background-color: lemonchiffon;
+	display: inline-block;
+	border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+	text-decoration: none;
+	width: 50px;
+	font-size: 16px;
+	margin-bottom: 10%;
+	margin-left: 37%;
+	box-shadow: 5px 5px 5px #120901;
+}
+
+#goBackBtns {
+	display: flex;
+	justify-content: center;
+}
+
+/* Submission page styling */
+p {
+	padding: 10px;
+	text-transform: uppercase;
+	color: azure;
+	text-shadow: 5px 5px 5px rgb(186, 196, 231);
+	font-weight: bold;
 }
 
 

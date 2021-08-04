@@ -1,7 +1,8 @@
-// let subForm = document.querySelector('#myForm')
-// let subConf = document.querySelector('#congratsMsg')
+
 let submitForm = document.querySelector('#submitBtn');
 let msgDiv = document.querySelector('#msg');
+let finalPageEl = document.querySelector('#after-Submit')
+let form = document.querySelector('#myForm')
 
 renderSavedInput();
 
@@ -33,6 +34,9 @@ function renderSavedInput() {
 submitForm.addEventListener('click', function(event) {
   event.preventDefault();
 
+  finalPageEl.style.display = 'none';
+  form.style.display = 'block';
+
   var firstName = document.querySelector("#multi-first-name").value;
   var lastName = document.querySelector("#multi-last-name").value;
   var address = document.querySelector("#multi-address").value;
@@ -46,27 +50,27 @@ submitForm.addEventListener('click', function(event) {
   var signature = document.querySelector("#multi-signature").value;
 
   if (firstName === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'First Name cannot be left blank');
   } else if (lastName === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Last Name be left blank');
   } else if (address === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Address cannot be left blank');
   } else if (city === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'City cannot be left blank');
   } else if (state === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'State cannot be left blank');
   } else if (zipCode === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Zip Code cannot be left blank');
   } else if (email === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Email cannot be left blank');
   } else if (phoneNumber === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Phone Number cannot be left blank');
   } else if (question1 === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Questions cannot be left blank');
   } else if (question2 === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Questions cannot be left blank');
   } else if (signature === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Your Signature is Required');
   }  else {
     displayMessage('success', 'Submission accepted');
 
@@ -82,7 +86,14 @@ submitForm.addEventListener('click', function(event) {
     localStorage.setItem("question 2", question2);
     localStorage.setItem("signature", signature);
     renderSavedInput();
+
+    form.style.display = 'none';
+
+  if (finalPageEl.style.display === 'none') {
+    finalPageEl.style.display = 'block'
   }
+  }
+
 });
 
 

@@ -6,38 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Adoption Submission Form </title>
   <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/pure-min.css" integrity="sha384-Uu6IeWbM+gzNVXJcM9XV3SohHtmWE+3VGi496jvgX1jyvDTXfdK+rfZc8C1Aehk5" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.6/build/grids-responsive-min.css" />
   <link rel="stylesheet" href="./assets/css/subForm.css">
 </head>
 
 <body>
-  <header id="site-Logo">Adoption Center Logo
+  <div id="myForm">
+  <header id="site-Logo">Pet Adoption Process
     <div>
       <img id="gifPlace" alt="Picture of random dog">
     </div>
   </header>
 
   <main class="form-Layout submit-Info" id="adoption-Form">
-    <form id="myForm" name="adoptForm" class="pure-form pure-form-stacked">
+    <form  name="adoptForm" >
       <fieldset>
           <legend>Adoption Application and Contract</legend>
-          <div class="pure-g">
-              <div class="pure-u-1-8 pure-u-md-1-3">
+          <div class="pure-g pure-form pure-form-stacked">
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-24">
                   <label for="multi-first-name">First Name</label>
                   <input type="text" id="multi-first-name" class="pure-u-23-24" />
               </div>
-              <div class="pure-u-1-8 pure-u-md-1-3">
+              <div class="pure-u-1 pure-u-md-1-2 pure-u-lg-3-24">
                   <label for="multi-last-name">Last Name</label>
                   <input type="text" id="multi-last-name" class="pure-u-23-24" />
               </div>
-              <div class="pure-u-5-24 pure-u-md-1-3">
+              <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-4">
                   <label for="multi-address">Address</label>
                   <input type="text" id="multi-address" class="pure-u-23-24" required="" />
               </div>
-              <div class="pure-u-3-24 pure-u-md-1-3">
+              <div class="pure-u-1 pure-u-md-12 pure-u-lg-3-24">
                   <label for="multi-city">City</label>
                   <input type="text" id="multi-city" class="pure-u-23-24" />
               </div>
-              <div class="pure-u-2-24 pure-u-md-1-3">
+              <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-12">
                   <label for="multi-state">State</label>
                   <select id="multi-state" class="pure-input-1-2">
                       <option>AL</option>
@@ -46,20 +48,20 @@
                       <option>HI</option>
                   </select>
               </div>
-              <div class="pure-u-2-24 pure-u-md-1-3">
+              <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-8">
                   <label for="multi-zip-code">Zip Code</label>
                   <input type="text" id="multi-zip-code" class="pure-u-23-24" />
               </div>
-              <div class="pure-u-4-24 pure-u-md-1-3">
+              <div class="pure-u-1 pure-u-md-12 pure-u-lg-5-24">
                 <label placeholder="Email" for="multi-email">Email</label>
                 <input type="email" id="multi-email" class="pure-u-23-24" required="" />
             </div>
-            <div class="pure-u-1-8 pure-u-md-1-3">
+            <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-6">
                 <label for="multi-phone-number">Phone Number</label>
                 <input type="text" id="multi-phone-number" class="pure-u-23-24" required="" />
             </div>
 
-            <div class="pure-u-5-24 pure-u-md-1-3">
+            <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-5">
               <label for="screen-q-1">Do you own any pets?</label>
               <div id="selectionYN">
               <label>
@@ -73,16 +75,16 @@
             </div>
           </div>
 
-          <div class="pure-u-5-24 pure-u-md-1-3">
+          <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-6">
             <label for="screen-q-2">If you have to leave town, emergently or planned, where would your pet stay?</label>
             <input type="text" id="screen-q-2" class="pure-u-23-24" required="" />
         </div>
 
-        <div class="pure-u-5-24 pure-u-md-1-3">
-          <label for="contract">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatem tempore numquam dicta pariatur nam aspernatur rem ab aut alias! Qui nihil et debitis odit, reprehenderit cupiditate hic minima perspiciatis.</label>
+        <div class="pure-u-1 pure-u-md-12 pure-u-lg-1">
+          <label for="contract"><b>Please read and sign below:</b> Many factors determine which applicant will be matched with a particular pet. Our goal is to place all animals into homes that will best suit their individual needs. Please ask for clarification if you have any questions.</label>
       </div>
 
-      <div class="pure-u-5-24 pure-u-md-1-3">
+      <div class="pure-u-1 pure-u-md-12 pure-u-lg-1-4">
         <label for="multi-signature">Signature</label>
         <input type="text" id="multi-signature" class="pure-u-23-24" required="" />
     </div>
@@ -92,16 +94,28 @@
               <!-- submit button -->
               <input type="button" id="submitBtn" value="Submit Form">
             </div>
-         
       </fieldset>
     </form>
 
     <div id="msg"></div>
     
-    <div>
+    <div class="main-page-btn">
       <a id="goBack" href="index.html">Main Page</a>
     </div>
+
 </main>
+</div>
+
+<div id="after-Submit" style="display: none">
+  <p>Congratulations, your application has been submitted and is pending review. You will recieve an Email with your adoption form responses shortly. Thank you for helping an animal find its forever home! If you would like to check out any other animals we have for adoption, simply head back to our main page. 
+  </p>
+
+  <div class="goBackBtns">
+    <a id="goBackSub" href="subForm.html">Adoption Form</a>
+    
+    <a id="goBack" href="index.html">Main Page</a>
+  </div>
+</div>
 
   <script src="./assets/js/subForm.js"></script>
 </body>
