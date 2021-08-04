@@ -70,6 +70,7 @@ td, tr {
 
 img {
     width: 25%;
+    max-width: 300px;
 
 }
 h2{
