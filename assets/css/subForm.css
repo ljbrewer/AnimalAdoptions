@@ -1,5 +1,5 @@
 body {
-	background-color: coral;
+	background-color: lemonchiffon;
 }
 
 header {
@@ -23,7 +23,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 20vh;
+  min-height: 10vh;
 }
 
 #adoption-Form {
@@ -36,7 +36,7 @@ header {
 	margin: 0px 50px;
 	border: 2px solid #120901;
 	border-radius: 5px;
-	background-color: teal;
+	background-color: rgb(186, 196, 231);
 	box-shadow: 5px 5px 5px #120901;
 }
 
@@ -54,6 +54,46 @@ header {
 #submitBtn {
 	border-radius: 10px;
 	color: black;
+	background-color: coral;
+}
+
+#goBack {
+	background-color: coral;
+	display: inline-block;
+	border-radius: 10px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+	width: 50px;
+	font-size: 16px;
+	margin-left: .3%;
+	margin-bottom: 10%;
+	
+}
+
+#congratsMsg {
+	visibility: hidden;
+}
+
+#msg {
+  visibility: hidden;
+  margin-top: 20px;
+  font-weight: 700;
+  height: 1.2em;
+  font-size: 1.2em;
+}
+
+#msg.success,
+#msg.error {
+  visibility: visible;
+}
+
+#msg.success {
+  color: #001b44;;
+}
+
+#msg.error {
+  color: #e6252c;
 }
 
 
