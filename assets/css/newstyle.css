@@ -43,7 +43,7 @@ section {
   float: left;
   margin-left: 10%;
 }
-.dog-container, .cat-container,  .bear-container, img {
+.dog-container, .cat-container,  .fox-container, img {
   display: flex;
   width: 100%;
   margin-top: 5px;
