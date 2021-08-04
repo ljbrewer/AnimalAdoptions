@@ -22,7 +22,10 @@ header {
  ;
 }
 
-/* Container needed to position the button. Adjust the width as needed */
+section{
+margin: 0 15px 0 50px;
+
+}
 
 .flex-centered {
   flex: 100%;
@@ -38,7 +41,10 @@ header {
 
  
 }
+section {
+  padding-left: 25px;
 
+}
 /* Make the image responsive */
 .dog-container, .cat-container,  .bear-container, img {
 

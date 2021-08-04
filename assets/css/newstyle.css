@@ -41,6 +41,7 @@ background-size:15%;
 /* Make the image responsive */
 section {
   float: left;
+  margin-left: 10%;
 }
 .dog-container, .cat-container,  .bear-container, img {
   display: flex;
@@ -54,6 +55,7 @@ section {
   border-width: 10px;
   background-color: lavender;
   justify-items: center;
+  border-color: honeydew
 }
 img {
   width: 50%;

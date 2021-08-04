@@ -11,7 +11,7 @@ $('.dog-pic').click(function () {
 $('.cat-pic').click(function () {
     window.location = "cats.html";
 });
-$('.bear-pic').click(function () {
+$('.fox-pic').click(function () {
     window.location = "Foxes.html";
 });
 
