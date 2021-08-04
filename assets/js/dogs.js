@@ -13,12 +13,10 @@ function getDogData(term = 'terrier') {
   })
     .then(function (data) {
 <<<<<<< HEAD
-<<<<<<< HEAD
     displayDog(data.message);
-    console.log(data);
-=======
 =======
 >>>>>>> main
+    console.log(data);
       dogpic[0] = document.getElementById("dogpic1");
       dogpic[1] = document.getElementById("dogpic2");
       dogpic[2] = document.getElementById("dogpic3");
@@ -28,10 +26,6 @@ function getDogData(term = 'terrier') {
       localStorage.setItem(1, data.message[0]);
       localStorage.setItem(2, data.message[1]);
       localStorage.setItem(3, data.message[2]);
-<<<<<<< HEAD
->>>>>>> 759219a0941a5c935ec37446d2358f18364ad423
-=======
->>>>>>> main
     })
 }
 
