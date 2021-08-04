@@ -4,6 +4,7 @@ function start() {
       return response.json();
     })
     .then(function (res) {
+      //cat pics
       var cat1 = document.getElementById("catpic1");
       var cat2 = document.getElementById("catpic2");
       var cat3 = document.getElementById("catpic3");
