@@ -1,7 +1,8 @@
-// let subForm = document.querySelector('#myForm')
-// let subConf = document.querySelector('#congratsMsg')
+
 let submitForm = document.querySelector('#submitBtn');
 let msgDiv = document.querySelector('#msg');
+let finalPageEl = document.querySelector('#after-Submit')
+let form = document.querySelector('#myForm')
 
 renderSavedInput();
 
@@ -32,6 +33,9 @@ function renderSavedInput() {
 
 submitForm.addEventListener('click', function(event) {
   event.preventDefault();
+
+  finalPageEl.style.display = 'none';
+  form.style.display = 'block';
 
   var firstName = document.querySelector("#multi-first-name").value;
   var lastName = document.querySelector("#multi-last-name").value;
@@ -82,7 +86,14 @@ submitForm.addEventListener('click', function(event) {
     localStorage.setItem("question 2", question2);
     localStorage.setItem("signature", signature);
     renderSavedInput();
+
+    form.style.display = 'none';
+
+  if (finalPageEl.style.display === 'none') {
+    finalPageEl.style.display = 'block'
   }
+  }
+
 });
 
 
