@@ -58,8 +58,8 @@ section {
   border-color: honeydew
 }
 img {
-  width: 50%;
-  min-width:300px;
+  width: 85%;
+  max-width:300px;
   border-style: ridge;
   border-width: 10px;
   border-color: honeydew
