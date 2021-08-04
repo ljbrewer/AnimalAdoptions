@@ -1,7 +1,17 @@
+<<<<<<< HEAD
 var bearContainer = document.querySelector('#foxesContainer');
 
 var foxpic = [];
 
+=======
+var searchButton = document.getElementById('find-me');
+var bearContainer = document.getElementById('foxesContainer');
+
+
+var foxpic = [];
+
+
+>>>>>>> 759219a0941a5c935ec37446d2358f18364ad423
 
 function displayFox(imageArray) {
     for (let i = 0; i < imageArray; i++) {
@@ -12,22 +22,34 @@ function displayFox(imageArray) {
       container.append(image);
     }
   }
+<<<<<<< HEAD
   
+=======
+
+  for (var i = 0; i < 3; i++) {
+
+>>>>>>> 759219a0941a5c935ec37446d2358f18364ad423
   function getFoxData(term = 'Foxes') {
      var endPoint = "https://randomfox.ca/floof/"
     fetch(endPoint)
     .then(function(response) {
+
       console.log(response);
+
       return response.json();
     })
       .then(function (data) {
       displayFox(data.message);
       console.log(data);
       })
+<<<<<<< HEAD
     }
 
     
   
+=======
+  }
+>>>>>>> 759219a0941a5c935ec37446d2358f18364ad423
   
   getFoxData();
 
