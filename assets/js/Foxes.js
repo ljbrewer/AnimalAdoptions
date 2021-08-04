@@ -4,6 +4,7 @@ var foxpic = [];
 
 
   var picture = [];
+  
 function getFoxData() {
   foxpic[0] = document.querySelector('.foxpic1');
   foxpic[1] = document.querySelector('.foxpic2');
