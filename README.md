@@ -28,17 +28,19 @@ Presentation:
 ![Image of website presentation4](./assets/images/presentationPG4.png)
 
 ````
-Website pages:
+Website Flowchart:
 ````
 
 ![Image of flowchart of Website](./assets/images/flowchart.png)
-
+````
+Website pages:
+````
 ![Image of Website Main Page](./assets/images/mainpage.png)
 
 ![Image of website Dog Page](./assets/images/dogpage.png)
 
-![Image of website Cat Page](./assets/images/dogpage.png)
+![Image of website Cat Page](./assets/images/catpage.png)
 
-![Image of website Fox Page](./assets/images/dogpage.png)
+![Image of website Fox Page](./assets/images/foxpage.png)
 
-![Image of website Adoption Form Page](./assets/images/dogpage.png)
+![Image of website Adoption Form Page](./assets/images/adoptionpage.png)
