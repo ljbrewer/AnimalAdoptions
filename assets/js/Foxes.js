@@ -1,38 +1,30 @@
-var searchButton = document.getElementById('find-me');
-var bearContainer = document.getElementById('foxesContainer');
-
+var bearContainer = document.querySelector('#foxesContainer');
 
 var foxpic = [];
 
 
-
-function displayFox(imageArray) {
-    for (let i = 0; i < imageArray.length; i++) {
-      var image = document.createElement('img')
-      image.setAttribute('src', imageArray[i])
-      foxpic[i]=imageArray[i];
-      image.setAttribute('alt', "Fox Image")
-      container.append(image);
-    }
-  }
-
-  for (var i = 0; i < 3; i++) {
-
-  function getFoxData(term = 'Foxes') {
-     var endPoint = "https://randomfox.ca/floof/"
-    fetch(endPoint)
-    .then(function(response) {
-
-      console.log(response);
-
-      return response.json();
-    })
-      .then(function (data) {
-      displayFox(data.message);
-      // console.log(data);
-      })
-  }
+  var picture = [];
   
+function getFoxData() {
+  foxpic[0] = document.querySelector('.foxpic1');
+  foxpic[1] = document.querySelector('.foxpic2');
+  foxpic[2] = document.querySelector('.foxpic3');
+  for (let i = 0; i < 3; i++) {
+  var endPoint = "https://randomfox.ca/floof/"
+ fetch(endPoint)
+ .then(function(response) {
+   return response.json();
+ })
+   .then(function (data) {
+    console.log(foxpic[i]);
+     foxpic[i].setAttribute('src', data.image);
+     localStorage.setItem(1, data.image);
+   })
+  }
+}
+
+
+    
   getFoxData();
 
   document.querySelector('#search').addEventListener('submit', function (event) {
@@ -40,8 +32,3 @@ function displayFox(imageArray) {
     getFoxData(document.querySelector('input').value.trim());
   })
   
-  document.querySelector('#submitBtn').addEventListener('submit', function (event) {
-    event.preventDefault()
-    console.log("submitBtn")
-    window.location = "./submission-Form/subForm.html";
-  });

@@ -1,4 +1,3 @@
-
 function start() {
   fetch("https://api.thecatapi.com/v1/images/search?limit=3&order=Desc")
     .then(function (response) {
@@ -6,7 +5,6 @@ function start() {
       return response.json();
     })
     .then(function (res) {
-       //console.log(res)
       var cat1 = document.getElementById("catpic1");
       var cat2 = document.getElementById("catpic2");
       var cat3 = document.getElementById("catpic3");
@@ -19,4 +17,6 @@ function start() {
       //cat1 = document.createElement(“figure”)
     });
 }
+
 start();
+
