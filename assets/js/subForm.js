@@ -50,27 +50,27 @@ submitForm.addEventListener('click', function(event) {
   var signature = document.querySelector("#multi-signature").value;
 
   if (firstName === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'First Name cannot be left blank');
   } else if (lastName === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Last Name be left blank');
   } else if (address === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Address cannot be left blank');
   } else if (city === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'City cannot be left blank');
   } else if (state === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'State cannot be left blank');
   } else if (zipCode === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Zip Code cannot be left blank');
   } else if (email === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Email cannot be left blank');
   } else if (phoneNumber === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Phone Number cannot be left blank');
   } else if (question1 === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Questions cannot be left blank');
   } else if (question2 === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Questions cannot be left blank');
   } else if (signature === "") {
-    displayMessage('error', 'Form cannot be left blank');
+    displayMessage('error', 'Your Signature is Required');
   }  else {
     displayMessage('success', 'Submission accepted');
 
