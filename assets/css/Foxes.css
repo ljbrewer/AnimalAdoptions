@@ -6,9 +6,10 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: row;
     background-image: repeating-linear-gradient(to bottom right,rgb(175, 228, 241),rgb(231, 199, 243));
 }
+
 header {
     display:flexbox;
     background-color: bisque;
@@ -21,21 +22,38 @@ header {
     font-size: 32px;
 }
 
-img.foxpic1 {
-    border: 1px solid #ccc;
-    flex-direction: row;
+.pure-button {
+    display: inline-block;
+    line-height: normal;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 
+
+
+img.foxpic1 {
+    flex-direction: row;
     display: flex;
     justify-content: space-between;
     margin-top: 2px;
     margin-bottom: 2px;
     margin-left: 25px;
     margin-right: 25px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
-
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    float: left;
+    width: 33.33%;
 }
 
 img.foxpic2 {
@@ -46,10 +64,12 @@ img.foxpic2 {
     margin-bottom: 2px;
     margin-left: 25px;
     margin-right: 25px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    float: left;
+    width: 33.33%;
 }
 
 img.foxpic3 {
@@ -61,11 +81,25 @@ img.foxpic3 {
     margin-bottom: 2px;
     margin-left: 25px;
     margin-right: 25px;
-    padding-top: 50px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    padding-left: 80px;
+    padding-top: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    float: left;
+    width: 33.33%;
 }
+
+img {
+    border-style: none;
+    width: 150px;
+    flex-direction: row;
+}
+
+.resize {
+    width: 400px;
+    height: auto;
+}
+
 
 
 #pure-button {
