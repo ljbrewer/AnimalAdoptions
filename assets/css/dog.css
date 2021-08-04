@@ -63,7 +63,7 @@ table, th, td {
 td, tr {
     padding: 15px;
 }
-.oddrow{
+.pure-table-odd{
     background-color: azure;
 
 }
