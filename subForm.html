@@ -17,7 +17,7 @@
   </header>
 
   <main class="form-Layout submit-Info" id="adoption-Form">
-    <form name="adoptForm" class="pure-form pure-form-stacked">
+    <form id="myForm" name="adoptForm" class="pure-form pure-form-stacked">
       <fieldset>
           <legend>Adoption Application and Contract</legend>
           <div class="pure-g">
@@ -28,14 +28,6 @@
               <div class="pure-u-1-8 pure-u-md-1-3">
                   <label for="multi-last-name">Last Name</label>
                   <input type="text" id="multi-last-name" class="pure-u-23-24" />
-              </div>
-              <div class="pure-u-4-24 pure-u-md-1-3">
-                  <label for="multi-email">E-Mail</label>
-                  <input type="email" id="multi-email" class="pure-u-23-24" required="" />
-              </div>
-              <div class="pure-u-1-8 pure-u-md-1-3">
-                  <label for="multi-phone-number">Phone Number</label>
-                  <input type="text" id="multi-phone-number" class="pure-u-23-24" required="" />
               </div>
               <div class="pure-u-5-24 pure-u-md-1-3">
                   <label for="multi-address">Address</label>
@@ -58,66 +50,58 @@
                   <label for="multi-zip-code">Zip Code</label>
                   <input type="text" id="multi-zip-code" class="pure-u-23-24" />
               </div>
-          </div>
+              <div class="pure-u-4-24 pure-u-md-1-3">
+                <label placeholder="Email" for="multi-email">Email</label>
+                <input type="email" id="multi-email" class="pure-u-23-24" required="" />
+            </div>
+            <div class="pure-u-1-8 pure-u-md-1-3">
+                <label for="multi-phone-number">Phone Number</label>
+                <input type="text" id="multi-phone-number" class="pure-u-23-24" required="" />
+            </div>
 
-          <div>
-            <!-- Screening q1 with answer bubble choices, yes/no-->
-            <div>
-              <label>Do you own any pets ?</label>
+            <div class="pure-u-5-24 pure-u-md-1-3">
+              <label for="screen-q-1">Do you own any pets?</label>
               <div id="selectionYN">
-              <label> 
-                <input type="radio" name="choice-radio">
+              <label>
+                <input type="radio" name="choice-radio" id="choice-radio">
                 Yes
               </label>
               <label>
-                <input type="radio" name="choice-radio">
-                No
+                  <input type="radio" name="choice-radio" id="choice-radio">
+                  No
               </label>
             </div>
+          </div>
+
+          <div class="pure-u-5-24 pure-u-md-1-3">
+            <label for="screen-q-2">If you have to leave town, emergently or planned, where would your pet stay?</label>
+            <input type="text" id="screen-q-2" class="pure-u-23-24" required="" />
+        </div>
+
+        <div class="pure-u-5-24 pure-u-md-1-3">
+          <label for="contract">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatem tempore numquam dicta pariatur nam aspernatur rem ab aut alias! Qui nihil et debitis odit, reprehenderit cupiditate hic minima perspiciatis.</label>
+      </div>
+
+      <div class="pure-u-5-24 pure-u-md-1-3">
+        <label for="multi-signature">Signature</label>
+        <input type="text" id="multi-signature" class="pure-u-23-24" required="" />
+    </div>
+
+    
+            <div class="submit">
+              <!-- submit button -->
+              <input type="button" id="submitBtn" value="Submit Form">
             </div>
-          </div>
-    
-          <br>
-    
-          <div>
-            <!-- Screening q2 with answer text box -->
-            <label>If you have to leave town, emergently or planned, where would your pet stay?</label>
-            <input type="text">
-          </div>
-    
-          <br>
-          
-          <div>
-            <!-- Terms and conditions -->
-            <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor voluptatem tempore numquam dicta pariatur nam aspernatur rem ab aut alias! Qui nihil et debitis odit, reprehenderit cupiditate hic minima perspiciatis.</label>
-          </div>
-    
-          <br>
-    
-          <div>
-            <!-- signature and box text input -->
-            <label>Signature</label>
-            <input type="text">
-          </div>
-    
-    <br>
-    
-          <div id="congratsMsg" class="submit">
-          <!-- submit button -->
-          <button id="submitBtn"> Submit</button>
-        </div>
-    
-          </div>
-        </div>
+         
       </fieldset>
-
-      
     </form>
-</main>
 
-<section id="congratsMsg">
-  <p>Congrats you have Submitted your Application !</p>
-</section>
+    <div id="msg"></div>
+    
+    <div>
+      <a id="goBack" href="index.html">Main Page</a>
+    </div>
+</main>
 
   <script src="./assets/js/subForm.js"></script>
 </body>

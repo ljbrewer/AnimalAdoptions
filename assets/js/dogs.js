@@ -12,7 +12,10 @@ function getDogData(term = 'terrier') {
     
   })
     .then(function (data) {
+<<<<<<< HEAD
     displayDog(data.message);
+=======
+>>>>>>> main
     console.log(data);
       dogpic[0] = document.getElementById("dogpic1");
       dogpic[1] = document.getElementById("dogpic2");
