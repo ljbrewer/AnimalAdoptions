@@ -12,30 +12,32 @@
     <header>Fox Adoption Choices</header>
     <form id="search">
         <input type="text">
-        <button class="btn" type="submit">Find</button>
+        <!-- <button class="btn" type="submit">Find</button> -->
+        <button class="pure-button" type="submit">Find</button>
     </form>
     <div id="foxesContainer" class="foxes"></div>
         <img class ="foxpic1">
         <img class ="foxpic2">
         <img class ="foxpic3">
-        <h4>
-            <a href="index.html">Return to Main Adoption Page</a>
-        </h4>
-    <table>
-        <tr>
-            <th>Name</th>
-            <th>Gender</th>
-            <th>Breed Type</th>
-            <th>Age</th>
-            <th>Fun Fact</th>
-        </tr>
-        <tr>
-            <td>Copper</td>>
-            <td>Male</td>>
-            <td>Fox</td>>
-            <td>3</td>>
-            <td>Eats neighbor pets</td>
-        </tr>
+        <a class="pure-button pure-button-primary" href="index.html">Return to Main Page</a>
+    <table class="pure-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Breed Type</th>
+                <th>Age</th>
+                <th>Fun Fact</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="pure-table-odd">
+                <td>Copper</td>
+                <td>Male</td>
+                <td>Fox</td>
+                <td>3</td>
+                <td>Eats neighbor pets</td>
+            </tr>
         <tr>
             <td>Dixie</td>
             <td>Female</td>
@@ -43,18 +45,22 @@
             <td>5</td>
             <td>Loves cuddles</td>
         </tr>
-        <tr>
+        <tr class="pure-table-odd">
             <td>Tod</td>
             <td>Male</td>
             <td>Fox</td>
             <td>7</td>
             <td>Hates cats</td>
         </tr>
+        </tbody>
     </table>
 </div>
-    <button type="submit" id="submitBtn" class="adoption btn">Go Adopt</button>
+    <h2>
+    <a class="pure-button pure-button-primary" href="subForm.html">Go Adopt</a>
+    </h2>
 
     <script src="assets/js/Foxes.js"></script>
+        
 
 
 </body>
